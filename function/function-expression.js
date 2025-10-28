@@ -1,0 +1,14 @@
+const printstar=function(row){
+    for (let i = 1; i <=row; i++) {
+      let star=""
+        for (let j = 1; j <=i; j++) {
+            star+="* "
+          
+            
+        }
+     console.log(star)    
+    }
+    
+}
+printstar(3)
+
