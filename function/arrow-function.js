@@ -1,15 +1,18 @@
 const otherWayOfGmailValidity=(str)=>{
+
   if (str.includes("@")) {
         if (str.includes("gmail")) {
-            console.log("It is a valid email")
+            return "It is a valid email"
         } else {
-            console.log("its not a gmail")
+              throw new Error( "its not a gmail")
         }
 
     } else {
-        console.log("@ is not included")
+     throw new Error( "@ is not included")
     }
+  
 }
-otherWayOfGmailValidity("saman@tickmark.io")
+const data=otherWayOfGmailValidity("saman@tickmark.io")
+console.log(data)
 
 
