@@ -1,11 +1,12 @@
 // Write a function displayResult(sumCallback) that first calls another function addNumbers(5, 10, callback) and prints the result.
 
 function addNumbers(a, b, callback) {
-     console.log(a + b )
-    callback(displayResult)
+  const sum = a + b
+    callback(sum)
 }
-function displayResult() {
-    console.log(5 + 10)
+function displayResult( result) {
+    console.log(`The sum is: ${result}`)
 }
-addNumbers( 5,10,displayResult)
+addNumbers(10,50,displayResult)
    
+
