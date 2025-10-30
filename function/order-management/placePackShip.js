@@ -1,11 +1,11 @@
 // Create 3 callback functions:
-const placeOrder=( orderName, funcPackOrder, funcShiporder)=>{
+const placeOrder=( orderName, funcPackOrder, funcShipOrder)=>{
     console.log(`Order has been placed for ${orderName}.`)
-  funcPackOrder(orderName,funcShiporder)
+  funcPackOrder(orderName,funcShipOrder)
 }
-const packOrder=( orderName, funcShiporder)=>{
+const packOrder=( orderName, funcShipOrder)=>{
     console.log(" Your order is packed.")
-    funcShiporder()
+    funcShipOrder()
 }
 const shipOrder=( )=>{
     console.log("Your order is shipped .")
