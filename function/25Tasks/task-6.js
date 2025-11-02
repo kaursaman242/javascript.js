@@ -1,8 +1,10 @@
 // Create a function processText(text, callback) that converts the text to uppercase and passes it to the callback.
 function processText(text,callback) {
-    console.log(text.toUpperCase());
-    callback();
+const upperText=text.toUpperCase()
+  callback(upperText)
+
 }
-function convertText() {
+function convertText( uppercase) {
+    console.log(`${uppercase}`)
 }
-processText("hello everyone! we are learning javascript.",convertText)
+processText("hello everyone! we are learning javascript.",convertText)  

@@ -6,10 +6,10 @@ function countLetters(str,callback) {
             count++;
         }       
     }
-    console.log(count);
-    callback();   
+    callback(count);   
 
 }
-function printCount() {
+function printCount(totalCount) {
+    console.log(totalCount);
 }   
 countLetters("Hello World, welcome to JavaScript functions!",printCount);

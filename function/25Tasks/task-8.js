@@ -4,10 +4,11 @@ function reverseAndPrint(str, callback) {
     for (let i = str.length - 1; i >= 0; i--) {
         reversed+=str[i]
     }
-   const result = reversed;
-   console.log(result);
-   callback();
+ 
+   callback(reversed);
+
 }
-function printStr() {
+function printStr( reversedStr ) {
+    console.log(reversedStr)
 }
 reverseAndPrint("Hello to all!",printStr)
