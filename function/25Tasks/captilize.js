@@ -19,7 +19,8 @@ function capitalize(sentence) {
 
     }
 
-    console.log('result', result)
+   return result
 
 }
-capitalize("sahil preet singh")
+const data=capitalize("sahil preet singh")
+console.log(data) //Sahil Preet Singh
