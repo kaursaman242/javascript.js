@@ -1,16 +1,16 @@
 // Write a function sequence(callbackA, callbackB, callbackC) that runs the three callbacks in order.
 function sequence(callbackA, callbackB, callbackC) {
-    callbackA();
-    callbackB();
-    callbackC();
+    callbackA( callbackB, callbackC ); 
 }   
-function printHello(result1) {
-    console.log("Hello Saman!")
+function printHello(callbackB, callbackC) {
+    console.log("Hello!");
+  callbackB(callbackC);
 }
-function printHowAreYou(result2) {
+function printHowAreYou(callbackC) {
     console.log("How are you?")
+    callbackC();
 }
-function printDoing(result3) {
+function printDoing() {
     console.log("What are you doing?")
 }
 sequence(printHello, printHowAreYou, printDoing);

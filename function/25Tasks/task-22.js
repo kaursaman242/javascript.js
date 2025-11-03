@@ -7,6 +7,7 @@ function checkLength(str, callback) {
     }
 }
 function printLengthResult(isLong) {
-    console.log(isLong)
+  const message = isLong ? "String is longer than 5 characters." : "String is 5 characters or shorter.";
+  console.log(message);
 }
 checkLength("Hello to all!", printLengthResult)
