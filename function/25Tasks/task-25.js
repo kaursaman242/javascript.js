@@ -4,6 +4,7 @@ function checkForSubstring(str, word, callback) {
     callback(true);
 }
 function printSubstringExists(exists) {
-    console.log(exists);
+    const message = exists ? "The substring exists in the string." : "The substring does not exist in the string.";
+    console.log(message);
 }
 checkForSubstring("Hello to all!", "all", printSubstringExists);

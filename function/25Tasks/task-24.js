@@ -4,6 +4,7 @@ function removeLastChar(str, callback) {
     callback(result)
 }                                           
 function printNewString(newStr) {
-    console.log(newStr)
+    const message = `String after removing last character: ${newStr}`
+    console.log(message)
 }
 removeLastChar("Hello!", printNewString)

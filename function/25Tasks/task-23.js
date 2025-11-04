@@ -4,6 +4,7 @@ function addPrefix(str, prefix, callback) {
     callback(result)
 }
 function printPrefixed(newStr) {
-    console.log(newStr)
+  const message = `Prefixed string: ${newStr}`
+  console.log(message)
 }
 addPrefix("deep kaur", "Saman ", printPrefixed)
