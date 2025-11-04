@@ -9,7 +9,7 @@ students[1]="Saman"
 students.push("Randhir")
 // methods to add mutliples value value in last
 students.push("Manjot",3,true,["kiwi",23])
-console.log('students', students)
+// console.log('students', students)
 
 
 const subject=["math","hindi"] //0fex2
@@ -24,5 +24,17 @@ const subject=["math","hindi"] //0fex2
 // console.log(newSt)
 
 
+// add value in first
+students.unshift("Raman")
+// console.log(students)
 
 
+// remove value from start
+
+students.shift()
+// console.log(students)
+
+
+// remove value from last 
+const data=students.pop()
+console.log(students)
