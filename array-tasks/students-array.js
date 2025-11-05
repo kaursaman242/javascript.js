@@ -4,3 +4,4 @@ students.forEach((name) => {
         console.log(name)
     }
 });
+
