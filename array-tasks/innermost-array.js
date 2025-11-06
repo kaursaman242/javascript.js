@@ -12,8 +12,7 @@
 
 const arr = [1, 2, [3, 4, [5, 6, ["seven"]]]];
 const innermostValue = arr[2][2][2][0];
-console.log(innermostValue)
-arr[2][2][2].push("eight");
+arr[2][2][2]=innermostValue + ","+ " eight";
 console.log(arr);
 
 
