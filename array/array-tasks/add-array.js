@@ -5,6 +5,6 @@
 // Output: ["a-fruit", "b-fruit", "c-fruit"]
 const array=["a", "b", "c"]
 const newArray=array.map((value,i)=>{
-    return (`${array[i]}-fruit `)
+    return (`${value}-fruit `)
 })
 console.log(newArray)
