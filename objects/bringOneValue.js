@@ -49,9 +49,10 @@ const longObjectWithHs = {
     },
   },
 };
-
-const {profile:{contact:{socials:{college:{projects:[,{year}]}}}}}=longObjectWithHs
-console.log(year)
+const {profile:{contact:{socials:{college:{preferences:{notifications:{push}}}}}}}=longObjectWithHs
+console.log(push)
+// const {profile:{contact:{socials:{college:{projects:[,{year}]}}}}}=longObjectWithHs
+// console.log(year)
  
 // const {profile:{contact:{socials:{college:{yearsAttended:{end:saman},preferences:{timezone}}}}} }=longObjectWithHs
 // console.log(saman,timezone)
