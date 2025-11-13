@@ -1,3 +1,4 @@
+// a constructor is a function used to create multiple objects with the same structure.but different values.
 function CreateStudentObject(name, age){
     this.name=name
 this.age=age
