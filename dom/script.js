@@ -1,46 +1,42 @@
-const root=window.document;
-const headElement=root.head;
-const titleElement=headElement.children[2]
-
-function changeTitle( newTitle )  {
-return titleElement.innerText=newTitle;
-}
 
 
-
-titleElement.innerText= changeTitle("Home Page")
-
-
-
-
-// access body
-const bodyElement=root.body;
-
-// change background color of body
-bodyElement.style.backgroundColor="#aeaeae";
-
-const h2Element= root.createElement("h2");
-h2Element.innerText="This is h2 element added by JS";
-
-bodyElement.appendChild(h2Element);
+const rootDocument= document
+// console.dir(rootDocument)
+const body= rootDocument.body
 
 
-const spanElement= root.createElement("span");
-spanElement.innerText="This is span element added by JS";
+const html=rootDocument.children[0]
+const head =html.firstChild
 
-h2Element.appendChild(spanElement);
-const span2Element= root.createElement("span");
-span2Element.innerText=" This is second span element added by JS";
+const title=head.children[2]
+title.textContent="New Title"
 
-h2Element.appendChild(span2Element);
+// const heade=rootDocument.rootDocument.children[0].children[0]
+
+// add button
+const heading=body.children[0]
 
 
-console.log(bodyElement);
-
-
-// console.dir(titleElement);
+const btn=document.createElement("a")
+const btn1=document.createElement("a")
+btn.textContent="Click Me"
+btn1.textContent="Click Me1"
 
 
 
 
-// console.dir(titleElement);
+body.append(btn)
+heading.append(btn1)
+
+
+
+console.log(document)
+
+// console.dir(btn)
+
+
+
+
+
+
+
