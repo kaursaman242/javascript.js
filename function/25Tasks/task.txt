@@ -1,0 +1,59 @@
+Basic Callback Concept
+
+Write a function greet(name, callback) that prints "Hello, <name>" and then calls the callback.
+
+Create a function displayMessage(message, callback) that prints the message and then calls the callback function.
+
+Write a function askUser(callback) that takes a callback and executes it after printing "What's your name?".
+
+Write a function doTwice(callback) that calls a callback function two times.
+
+Write a function delayed(callback) that waits for 2 seconds using setTimeout before calling the callback.
+
+🔹 Callbacks with String Methods
+
+Create a function processText(text, callback) that converts the text to uppercase and passes it to the callback.
+
+Write a function modifyString(str, callback) that trims whitespace from the string and passes it to the callback.
+
+Write a function reverseAndPrint(str, callback) that reverses a string using a loop and then calls the callback with the reversed result.
+
+Create a function countLetters(str, callback) that counts how many letters are in the string (excluding spaces) and sends the result to the callback.
+
+Write a function replaceWord(str, oldWord, newWord, callback) that replaces a word in the string and passes the result to the callback.
+
+🔹 Callbacks Inside Loops
+
+Write a function repeatText(text, times, callback) that prints the text times number of times, then calls the callback.
+
+Create a function loopThroughChars(str, callback) that calls the callback once for every character in the string.
+
+Write a function findVowels(str, callback) that counts vowels using a for loop and sends the count to the callback.
+
+Write a function removeSpaces(str, callback) that removes all spaces manually (no replace) and calls the callback with the new string.
+
+Write a function countWords(str, callback) that counts the number of words separated by spaces and sends the result to the callback.
+
+🔹 Callback Execution Order
+
+Write a function first(callback1, callback2) that calls callback1, then callback2.
+
+Write a function sequence(callbackA, callbackB, callbackC) that runs the three callbacks in order.
+
+Write a function callAfterMessage(message, callback) that prints the message and then calls the callback.
+
+Write a function multiCall(message, callback, times) that calls the callback with the message repeatedly using a loop.
+
+Write a function stepByStep(str, callback) that prints one letter at a time with setTimeout, and then calls the callback after finishing.
+
+🔹 Practical String-Based Callbacks
+
+Write a function capitalizeFirst(str, callback) that capitalizes the first letter of the string and passes it to the callback.
+
+Write a function checkLength(str, callback) that calls the callback with true if length > 5, else false.
+
+Write a function addPrefix(str, prefix, callback) that adds the prefix and passes it to the callback.
+
+Write a function removeLastChar(str, callback) that removes the last character and passes it to the callback.
+
+Write a function checkForSubstring(str, word, callback) that checks if word exists in str and sends the boolean result to the callback.
