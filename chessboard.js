@@ -3,9 +3,9 @@ let chessboard = ''
 for (let row = 0; row < size; row++) {
     for (let column = 0; column < size; column++) {
         if ((row + column) % 2 === 0) {
-            chessboard += '#'
+            chessboard += ' # '
         } else {
-            chessboard += ' '
+            chessboard += ' * '
         }
     }
     chessboard += '\n'
